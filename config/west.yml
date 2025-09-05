@@ -6,13 +6,18 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: cornix-shield
       url-base: https://github.com/hitsmaxft
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-shield-cornix
+    - name: zmk-keyboard-cornix
       remote: cornix-shield
+      revision: main
+    - name: zmk-helpers
+      remote: urob
       revision: main
   self:
     path: config
